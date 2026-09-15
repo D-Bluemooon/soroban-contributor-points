@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 license = "MIT"
 description = "A minimal on-chain contributor points registry for Soroban"
-repository = "https://github.com/D-Bluemoon/soroban-contributor-points"
+repository = "https://github.com/D-Bluemooon/soroban-contributor-points"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
