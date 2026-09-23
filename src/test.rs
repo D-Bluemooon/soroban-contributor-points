@@ -11,7 +11,7 @@ fn register_resolve_and_accumulate_points() {
     let maintainer = Address::generate(&env);
     let contributor = Address::generate(&env);
 
-    let contract_id = env.register(ContributorPointsContract, ());
+    let contract_id = env.register_contract(None, ContributorPointsContract);
     let client = ContributorPointsContractClient::new(&env, &contract_id);
 
     client.init(&maintainer);
@@ -41,7 +41,7 @@ fn cannot_resolve_same_issue_twice() {
     let contributor_one = Address::generate(&env);
     let contributor_two = Address::generate(&env);
 
-    let contract_id = env.register(ContributorPointsContract, ());
+    let contract_id = env.register_contract(None, ContributorPointsContract);
     let client = ContributorPointsContractClient::new(&env, &contract_id);
 
     client.init(&maintainer);
@@ -61,7 +61,7 @@ fn cannot_resolve_unregistered_issue() {
     let maintainer = Address::generate(&env);
     let contributor = Address::generate(&env);
 
-    let contract_id = env.register(ContributorPointsContract, ());
+    let contract_id = env.register_contract(None, ContributorPointsContract);
     let client = ContributorPointsContractClient::new(&env, &contract_id);
 
     client.init(&maintainer);
