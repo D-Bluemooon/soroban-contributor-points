@@ -45,6 +45,8 @@ cargo build --target wasm32-unknown-unknown --release
 cargo test
 ```
 
+**Deployed on testnet:** `CC5B6FYFEF3HVMRAZTDCN5BSWZS6DQDT56EOEG5EUKHCNVPUBVFITUUT` — [view on Stellar Expert](https://stellar.expert/explorer/testnet/contract/CC5B6FYFEF3HVMRAZTDCN5BSWZS6DQDT56EOEG5EUKHCNVPUBVFITUUT)
+
 ## Docs
 
 - [`ARCHITECTURE.md`](./ARCHITECTURE.md) — storage layout and design rationale
